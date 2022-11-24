@@ -1,4 +1,3 @@
-cd home ;
 sudo mkdir Desktop;
 sudo mkdir Documents; 
 sudo mkdir Downloads; 
