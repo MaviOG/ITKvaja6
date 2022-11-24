@@ -4,11 +4,11 @@ sudo mkdir Documents
 sudo mkdir Downloads 
 sudo mkdir Pictures 
 sudo mkdir Videos
-for i in {1..5}
+for i in 1 2 3 4 5
 do
 sudo mkdir folders$i
 done;
-for i in {1..5}
+for i in 1 2 3 4 5 
 do
 sudo useradd user$i
 sudo passwd user$i
