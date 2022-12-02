@@ -8,12 +8,10 @@ for i in {1..5}
 do
 mkdir folders$i
 done 
-for p in {1..5}
-do
-sudo useradd user$p
-sudo passwd user$p
-sudo usermod -a -G sudo user$p
-done
+while read line; do
+sudo useradd $line 
+sudo usermod -a -G sudo $line
+done < user.txt
 sudo apt install ufw git nginx net-tools
 sudo apt-get update 
 sudo apt-get install \
